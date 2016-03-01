@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.06"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fileImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/iceland" />
+
+        <LinearLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/FileDate"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Place Date"
+                    android:textColor="#626262"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fileTitle"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="0dp"
+                android:maxLines="2"
+                android:lines="2"
+                android:ellipsize="end"
+                android:text="Place Title"
+                android:typeface="normal"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textColorLink="@android:color/holo_blue_light"
+                />
+
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iconLocation"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:paddingBottom="3dp"
+                    android:gravity="right"
+                    android:src="@drawable/mypos"
+                    />
+
+                <TextView
+                    android:id="@+id/fileLocation"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Saved Location"
+                    android:typeface="normal"
+                    android:textColor="#626262"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

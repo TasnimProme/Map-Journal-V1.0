@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.askme.smart_map.activity.TaskToDoBuilder.Message_location"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number :"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_number_messageLocation"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:phoneNumber="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message :"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_messageLocation"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/ChooseLocation"
+        android:text="Choose Location"
+        android:background="#9575CD"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:onClick="chooseLocation"
+        android:layout_marginTop="210dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Send"
+        android:id="@+id/SendSMSLocation"
+        android:background="#9575CD"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

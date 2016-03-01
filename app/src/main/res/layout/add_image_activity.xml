@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add"
+        app:contentInsetStart="0dp"
+        android:background="@android:color/holo_blue_dark"
+        style="@style/Toolbar">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/fileSave"
+            android:onClick="saveOnClick"
+            android:background="@drawable/back"
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/fileDate"
+            android:onClick="chooseDate"
+            android:layout_gravity="right"
+            android:background="@drawable/calander"
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera"
+            android:id="@+id/btnAdd"
+            android:onClick="btnAddOnClick"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_gravity="right" />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/map"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="btnPickLocation"
+            android:id="@+id/fileLocation"
+            android:layout_gravity="right" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/previewUploadedImage"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/addFileTitle"
+            android:hint="title"
+            android:background="@android:color/transparent"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/black"
+            android:textColorHint="@color/button_material_dark"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/addFileDescription"
+            android:background="@android:color/transparent"
+            android:hint="write something..."
+            android:gravity="start"
+            android:textColor="@color/guillotine_background"
+            android:textColorHint="@color/button_material_dark"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mdtp_done_background_color"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

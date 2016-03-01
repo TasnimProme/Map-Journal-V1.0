@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity"
+    android:background="#000000"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="#9CCC65"
+        android:text="Send Message"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/message"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:background="#00B0FF"
+        android:text="Set Reminder"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/notification"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:background="#FF9800"
+        android:text="View Saved Tasks"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/go_back"/>
+
+</LinearLayout>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootGalary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guillotine_background_dark"
+    android:orientation="vertical">
+    <View
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_actionbar_background_view_height"
+        android:background="@color/guillotine_background"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f8f8f8"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent">
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:background="@drawable/gallery"
+                android:id="@+id/addFile"
+                android:layout_gravity="bottom|right"
+                android:padding="0dp"
+                android:layout_alignBottom="@+id/list"
+                android:layout_alignRight="@+id/list"
+                android:layout_alignEnd="@+id/list"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

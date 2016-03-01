@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="guillotine_background">#444153</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+
+<color name="defaultIntroColor">#2D9FC9</color>
+
+<color name="primary_dark">#6C7F91</color>
+    <color name="accent">#6C7F91</color>
+    <color name="light_green">#7ABA34</color>
+    <color name="dark_green">#5B852D</color>
+    <color name="photo_tint">#7f101010</color>
+
+
+    <color name="deepPurple1">#311B92</color>
+    <color name="deepPurple2">#512DA8</color>
+    <color name="deepPurple3">#673AB7</color>
+    <color name="deepPurple4">#9575CD</color>
+    <color name="deepPurple5">#D1C4E9</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+
+</resources>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity"
+    android:background="#000000"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="#009688"
+        android:text="By Time"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/time_notification"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:background="#F06292"
+        android:text="By Location"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/location_notification"/>
+
+
+</LinearLayout>
+

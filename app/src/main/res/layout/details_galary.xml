@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+      android:id="@+id/placeImage"
+      android:layout_width="match_parent"
+      android:layout_height="400dp"
+        android:src="@drawable/hongkong"
+      android:scaleType="centerCrop" />
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        style="@style/Toolbar"
+        android:background="@android:color/transparent">
+      <ImageView
+          android:id="@+id/backPreview"
+          android:layout_marginLeft="12dp"
+          android:padding="4dp"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:background="@android:color/transparent"
+          android:src="@android:drawable/ic_menu_revert"/>
+
+      <TextView
+          android:id="@+id/placeDateTime"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:paddingLeft="10dp"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:text="Date and Time"
+          android:background="@android:color/transparent"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textColor="@android:color/white" />
+
+    </android.support.v7.widget.Toolbar>
+
+  </FrameLayout>
+  <ImageButton
+      android:id="@+id/placeLocationButton"
+      android:layout_width="@dimen/floating_button_size"
+      android:layout_height="@dimen/floating_button_size"
+      android:layout_gravity="end"
+      android:scaleType="fitXY"
+      android:layout_marginEnd="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginBottom="10dp"
+      android:background="@android:color/transparent"
+      android:src="@drawable/options_icon"/>
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:id="@+id/placeNameHolder"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="@color/primary_dark">
+
+      <TextView
+        android:id="@+id/placeTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10dp"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+  </FrameLayout>
+
+
+
+  <TextView
+      android:id="@+id/placeDescription"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:textColor="@android:color/white"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:text="Description"
+      />
+
+</LinearLayout>

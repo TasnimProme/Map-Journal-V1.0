@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@drawable/listview_item_border">
+
+    <TextView
+        android:id="@+id/smsNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="SMS Number"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/smsStatus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingBottom="3dp"
+            android:gravity="right"
+            android:src="@android:drawable/ic_popup_sync"
+            />
+
+        <TextView
+            android:id="@+id/smsLocationOrTime"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Location/Time"
+            android:typeface="normal"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/smsBody"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:lines="3"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:text="Body"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        />
+
+
+</LinearLayout>
+

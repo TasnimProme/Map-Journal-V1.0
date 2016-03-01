@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yalantis.guillotine.sample" >
+
+    <permission
+        android:name="com.javapapers.android.googleplacesdetail.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="com.javapapers.android.googleplacesdetail.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.askme.smart_map.App"
+        android:allowBackup="true"
+        android:icon="@drawable/show_route"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.askme.smart_map.activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.askme.smart_map.activity.GalaryActivity"
+            android:label="Galary"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.askme.smart_map.activity.DetailGalaryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.askme.smart_map.activity.addFileActivity"
+            android:label="Add Images" >
+        </activity>
+        <activity
+            android:name="com.askme.smart_map.activity.StartupActivity"
+            android:label="Map Journal" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.askme.smart_map.activity.FirstIntro"
+            android:label="Map Journal" />
+        <activity android:name="com.askme.smart_map.activity.DefaultIntro" />
+        <activity
+            android:name="com.askme.smart_map.activity.AtlasActivity"
+            android:label="Atlas" />
+        <activity
+            android:name="com.askme.smart_map.activity.StreetViewActivity"
+            android:label="StreetView" >
+        </activity>
+        <activity
+            android:name="com.askme.smart_map.activity.TaskToDo"
+            android:label="@string/title_activity_task_to_do" >
+        </activity>
+        <activity
+            android:name="com.askme.smart_map.activity.ShowRoute"
+            android:label="@string/title_activity_show_route" >
+        </activity>
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Message_location" />
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Message_option" />
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Message_time" />
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Remainder_location" />
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Remainder_option" />
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Remainder_time" />
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Saved_message" />
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Saved_notification" />
+        <activity android:name="com.askme.smart_map.activity.TaskToDoBuilder.Saved_option" />
+
+
+        <activity
+            android:name="com.askme.smart_map.activity.AddToFavourite.MapDialog"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+            <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDrxDWHOP1VNpYLlmlPNhWIt7CdyRQSIC8" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAnujWrP43wSm5jF0G944g5oP3uavhxBVA" />
+
+        <receiver android:name="com.askme.smart_map.activity.TaskToDoBuilder.AlertReceiver" />
+        <receiver android:name="com.askme.smart_map.activity.TaskToDoBuilder.ProximityIntentReceiver" />
+
+        <activity
+            android:name="com.askme.smart_map.activity.AddToFavourite.AddToFavourite"
+            android:label="@string/title_activity_add_to_favourite" >
+        </activity>
+    </application>
+
+</manifest>
